@@ -7,7 +7,7 @@ Find the commit and revert it using bisect.
 
 ## Getting started
 
-1. Run `. setup.sh`
+1. Run `node setup.js`
 1. `cd exercise`
 
 ## Useful commands
