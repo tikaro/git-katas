@@ -1,7 +1,6 @@
 # Git Kata: Basic Commits
 This kata will introduce you to the commands `git add` and `git commit`.
 
-You can look at the bottom of this file, if you have not yet done basic git configuration.
 ## The task
 
 1. Run `node setup.js`
@@ -34,13 +33,3 @@ You can look at the bottom of this file, if you have not yet done basic git conf
 - `touch filename` to create a file
 - `echo content > file` to overwrite file with content
 - `echo content >> file` to append file with content
-
-
-## Git Initial Configuration
-1. `git config --global user.name "John Doe"`
-1. `git config --global user.email "johndoe@example.com`
-For the vim scared:
-- `git config --global core.editor nano`
-
-for the windows peeps:
-- `git config --global core.editor notepad`
