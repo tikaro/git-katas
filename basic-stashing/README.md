@@ -4,7 +4,11 @@
 
 In your terminal, run
 ```
-$ ./setup.sh && cd exercise
+$ node setup.js
+```
+When you see "setup complete", run
+```
+$ cd exercise
 ```
 
 ## The task
