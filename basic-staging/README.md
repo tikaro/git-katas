@@ -14,9 +14,8 @@ We will also work with `git reset` to reset the staged changes of a file, and `g
 
 ## The task
 
-You live in your own repository. There is a file called file.txt
+Open a terminal and run `node setup.js`, then `cd` to the `exercise` directory that has been created. There is a file called `file.txt`
 
-1. Run `. setup.sh`
 1. What's the content of file.txt?
 1. Overwrite the content in file.txt: `echo 2 > file.txt` to change the state of your file in the working directory
 1. What does `git diff` tell you? 
@@ -27,8 +26,8 @@ You live in your own repository. There is a file called file.txt
 1. Overwrite the content in file.txt: `echo 3 > file.txt` to change the state of your file in the working directory.
 1. What does `git diff` tell you?
 1. What does `git diff --staged` tell you?
-1. Explain what is happening
-1. Run `git status` and observe that `file.txt` are present twice in the output.
+1. Explain to yourself or someone else what is happening
+1. Run `git status` and observe that `file.txt` is present twice in the output.
 1. Run `git reset HEAD file.txt` to unstage the change
 1. What does git status tell you now?
 1. Stage the change and make a commit
@@ -40,9 +39,7 @@ You live in your own repository. There is a file called file.txt
 1. What is the content of file.txt?
 1. What does `git status` tell us?
 
-
-
-## Useful commands
+## Useful commands for this kata
 
 - `git add`
 - `git commit`
@@ -59,5 +56,5 @@ You live in your own repository. There is a file called file.txt
 ## Aliases
 
 You can set up aliases as such:
-`git config --global alias.lol 'log --oneline --decorate --graph --all'`
+`git config --global alias.lol "log --oneline --decorate --graph --all"`
 This might be useful to you.
