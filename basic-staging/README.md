@@ -3,8 +3,9 @@
 This kata will examine the staging area of git.
 
 In git we are working with three different areas:
-* The working directory where you are making your changes
-* The staging area where all changes you have added through `git add` will stay
+
+* The working directory where you are making your changes.
+* The staging area where all changes you have added through `git add` will stay.
 * The repository where every commit ends up, making your history. To put your staged changes in here you issue the `git commit` command.
 
 A file can have changes both in the working directory and staging area at the same time.
