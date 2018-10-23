@@ -18,4 +18,7 @@ Quickly switch to a different task without having to nuke your branches.
 ## [bad-commit](bad-commit/README.md)
 Use `git bisect` to find a bad commit.
 
+## [squashing](squashing/README.md)
+Squash multiple commits into a single commit.
+
 As new exercises are added, they will appear here.
