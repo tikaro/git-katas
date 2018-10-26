@@ -1,11 +1,14 @@
-#!/bin/bash
+'use strict';
+/* eslint-disable no-console */
+const spawn = require('child_process').spawnSync;
+const kata="ignore"
 
-# Include utils
-source ../utils/utils.sh
+// Remove existing exercise, if it exists, and make a clean repo
+spawn('rm -rf exercise/', { shell: true, stdio: 'inherit' });
+console.log(`Setting up exercise \'${kata}\'...`);
+spawn('git init exercise', { shell: true, stdio: 'inherit' });
 
-kata="basic-ignore"
-makerepo
+// Set up the exercise
+spawn(`cd exercise && echo hello > file1.txt"`, { shell: true, stdio: 'inherit' });
 
-echo "hello" > file1.txt
-git init
-git checkout -b master
+console.log(`Setup of exercise ${kata} complete!`);
