@@ -15,6 +15,9 @@ The ins and outs of staging your changes.
 ## [basic-stashing](basic-stashing/README.md)
 Quickly switch to a different task without having to nuke your branches.
 
+## [amend](amend/README.md)
+You forgot to add a file to the last commit. Go back in time and do it better.
+
 ## [bad-commit](bad-commit/README.md)
 Use `git bisect` to find a bad commit.
 
