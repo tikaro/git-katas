@@ -1,15 +1,38 @@
-# gitkatas
-## detached head state
+# Git Kata: Detached Head
 
-To get the full experience from this exercise do:
-`. ./setup.sh`.
+## Setup:
 
-The user has ended up in a "detached head" state in the `kata3-detached-head-master` branch.
+In your terminal, run `$ node setup.js`
 
-This is a scary situation for the user, but as we know, git is not scary.
+When you see "setup complete", run `$ cd exercise`
 
-Run `git status` - see what is going on
+## The task
 
-Restore normalcy in this repository by moving to `kata3-detached-head`
+While browsing a branch, you suddenly notice the message:
+```
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
 
-Note that this task might seem more confusing if you did not run `setup.sh` in your terminal.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+```
+
+This is a [scary situation](https://www.youtube.com/watch?v=EKM4zgXbYY8). Do not fret!
+
+1. Run `git status`. What does the output say?
+1. Restore normalcy by checking out branch `master`.
+1. Use `git log` to see the five commits in this repository's history.  Jot down the first five characters of each commit's SHA1 hash.
+1. Check out an individual commit by running `git commit` and its SHA1 hash. Notice how the "detached head" message returns.
+1. Return to the `HEAD` of the master branch.
+1. Let's look at how master's `HEAD` points to the latest commit of a set of commits. In a text editor, open up `exercise/.git/refs/heads/` and open the file `master`.  What does it contain?
+
+## Useful Commands
+* `git checkout master`
+* `git log --oneline`
+* `git checkout <$SHA1>`
+
+## Further Reading
+* "[What's a Detached Head in Git?](https://www.git-tower.com/learn/git/faq/detached-head-when-checkout-commit)"
