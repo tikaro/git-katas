@@ -24,4 +24,7 @@ Use `git bisect` to find a bad commit.
 ## [squashing](squashing/README.md)
 Squash multiple commits into a single commit.
 
+## [cherry-pick](cherry-pick/README.md)
+Use `git cherry-pick` to move a commit to the branch where it belongs.
+
 As new exercises are added, they will appear here.
