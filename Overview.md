@@ -27,4 +27,7 @@ Squash multiple commits into a single commit.
 ## [cherry-pick](cherry-pick/README.md)
 Use `git cherry-pick` to move a commit to the branch where it belongs.
 
+## [break-up-a-feature](break-up-a-feature/README.md)
+Remove some useful (but extra) "Might as well" commits from a feature branch into their own branch.
+
 As new exercises are added, they will appear here.
